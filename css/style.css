@@ -1,0 +1,152 @@
+/*global*/
+
+body{
+    background-color: #2A9D8F;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-align:center;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+ /*end of global*/
+
+/*button style for index html*/
+#sendBtn {
+    width: 350px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #f6d55c;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+  } 
+
+  #sendBtn:hover {
+    background-color: #F4A261;
+    border-color: #F4A261;
+    color: #fff;
+    
+  }
+/*end of index html*/
+
+/*tictactoe*/
+
+  #game {
+    width: 305px;
+    height: 305px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  #game > li {
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    text-decoration:none;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  #game > li.x {
+    font-size: 40px;
+    color: #f3cf06;
+  }
+  
+  #game > li.o {
+    font-size: 40px;
+    color: #023e8a;
+  }
+  
+  #game > li:hover {
+    background: #f9f9f9;
+  }
+  
+  #game > li:active {
+    width: 100px;
+    height: 100px;
+    border: 0;
+  }
+  
+  #nfo {
+    text-align:center;
+    margin-top: 10px;
+  }
+  
+  #whos-turn > span,
+  #game-messages > span {
+    display: none;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  #whos-turn.x span.x,
+  #whos-turn.o span.o, 
+  #game-messages.player-x-win > span.player-x-win, 
+  #game-messages.player-o-win > span.player-o-win,
+  #game-messages.draw > span.draw {
+    display: block;
+    margin-top: 10px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+  }
+  
+  #reset-game {
+    text-align: center;
+        border: none;
+        padding: 0.6em 1.2em;
+        background: #f3cf06;
+        color: #fff;
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        margin: 3px 2px;
+        border-radius: 2px;
+  }
+  
+  #homeBtn {
+    text-align: center;
+        border: none;
+        padding: 0.6em 1.2em;
+        background: #f3cf06;
+        color: #fff;
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        margin: 3px 2px;
+        border-radius: 2px;
+        text-decoration: none;
+  }
+  
+  #reset-game:hover {
+        background-color:#f6d55c;
+        
+  }
+  
+  #homeBtn:hover {
+    background-color:#f6d55c;
+    
+  }
+
+  /*end of tictactoe*/

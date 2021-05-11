@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Mij Gemu | Word Guessing Game</title>
+    
+    <!-- Bootstrap, google font and CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--heading or title-->
+    <header>
+    <br>
+    <h1 class="text-center" style="color: #ed553b; font-family: 'Zen Dots', cursive;">Guess Me</h1>
+    </header>
+
+    <!--container for main content-->
+  <div class="container">
+    <!--start of text-center div-->
+    <div class="text-center">
+      <h5 style="font-family:'Courier New', Courier, monospace; font-weight: bold;">Solve the word or else the dinosaur will catch you!</h5>
+     
+      <!--div for showing how many wrong guesses have been made by the player-->
+    <div class="text-center" style="color: #fff; font-family:'Courier New', Courier, monospace; font-size: 18px;">Wrong Guesses: <span id='mistakes' style="color: #023e8a; font-weight: bold;">0</span> of <span id='maxWrong'></span></div>
+    <!--end of wrong guesses div-->
+   <br>
+   <!--image showing how the dinosaur are getting closer to the player if they made a mistake-->
+      <img id='dinoPic' src=" " alt="" class="img-fluid" style="width: 30%; height: 200px; box-shadow: 3px;">
+      <!--end of dinosaur image-->
+      <br><br>
+      <!--shows the clue of the word to be guessed when the hint button is clicked-->
+      <p id="clue"style="color: #fff; font-family: 'Zen Dots', cursive;"></p>
+      <!--end of clue-->
+
+      <!--the letter that the player guessed will appear here-->
+      <p id="wordSpotlight">The word to be guessed goes here</p>
+      <!--end of chosen letter-->
+
+      <!--alphabet button for the player to click-->
+      <div id="keyboard"></div>
+      <!--end of alphabet button-->
+      <br>
+      <!--click this button to show the hint for the word-->
+      <button id="hint" class="btn btn-warning">Hint</button>
+      <!--end of hint button-->
+
+      <!--new word to guess-->
+      <button class="btn btn-warning" onClick="reset()">New</button>
+      <!--end of new button-->
+
+      <!--back to homepage-->
+      <a href="index.html" class="btn btn-warning" role="button">Home</a>
+      <!--end of homepage button-->
+
+    </div> 
+    <!--end of text-center div-->
+  </div>
+  <!--end of main content container-->
+  <br>
+
+  <!--footer-->
+  <footer>
+    <p class="text-center" style="color: #e43004; font-family: 'Zen Dots', cursive;"> Copyright &copy; Mij Gemu 2021</p>
+   </footer>
+  <!--end of footer-->
+
+  <!--script to link the tictactoe javascript-->
+  <script src='./js/wordgame.js'></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>

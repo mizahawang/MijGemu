@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap, google font and CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <title>Mij Gemu | Tic Tac Toe</title>
+    </head>
+    <body>
+        <!--heading or title-->
+        <header>
+        <br>
+        <h1 class="text-center" style="color: #e43004; font-family: 'Zen Dots', cursive;">Tic Tac Toe</h1>
+        </header>
+        
+        <!--Text to show which player's turn-->
+        <aside id="nfo">
+            <div id="whos-turn" class="x">
+               <span class="x" style="font-size: 23px; color: #f3cf06;">Player 1(X) it's your turn</span>
+               <span class="o" style="font-size: 23px; color: #023e8a;">Player 2(O) it's your turn</span>
+            </div>
+        </aside>
+        <!--end of player's turn-->
+
+        <!--Game result messages that tells which player wins-->
+            <div id="game-messages">
+                <span class="player-x-win">Player One Wins!</span>
+                <span class="player-o-win">Player Two Wins!</span>
+                <span class="draw">It's a Draw!</span>
+            </div>
+        <!--end of game result messages-->
+          <br>
+
+        <!--Shows player's score-->
+            <aside style="font-family: 'Courier New', Courier, monospace;">
+                  <p>Player 1(X): <span id="player-one-score" style="color:#f3cf06; font-weight: bold;">0</span><span> |
+                   Player 2(O): <span id="player-two-score" style="color:#023e8a; font-weight: bold;">0</span></p> 
+            </aside>
+        <!--end of player's score-->    
+
+       
+        <div class="container">
+        <!--tictactoe board-->
+            <ul id="game">
+                <!-- first row -->
+                <li data-pos="0,0"></li>
+                <li data-pos="0,1"></li>
+                <li data-pos="0,2"></li>
+                <!-- second row -->
+                <li data-pos="1,0"></li>
+                <li data-pos="1,1"></li>
+                <li data-pos="1,2"></li>
+                <!-- third row -->
+                <li data-pos="2,0"></li>
+                <li data-pos="2,1"></li> 
+                <li data-pos="2,2"></li>
+            </ul>
+        <!--end of tictactoe board-->    
+            
+        <!--button for new game and button for going back to home page-->
+            <button id="reset-game">New</button>
+            <a href="index.html" id="homeBtn">Home</a>
+        </div>
+
+        <!--footer-->
+        <footer style="position: fixed; text-align: center;">
+            <p style="color: #e43004; font-family: 'Zen Dots', cursive;"> Copyright &copy; Mij Gemu 2021</p>
+        </footer>     
+        <!--end of footer-->
+        
+        <!--script to link the tictactoe javascript-->
+        <script src="./js/tictactoe.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
+        
+    </body>
+</html>
